@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portefolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="nav_bar">
+        <div class="logo">
+          <h1>LA<span>DIVA</span></h1>
+        </div>
+        <div class="nav">
+          <span class="close">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-glyphs/30/delete-sign.png"
+              alt="delete-sign"
+            />
+          </span>
+
+          <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#pagephoto" class="nav-link">Bohème</a></li>
+            <li><a href="#pageshooting" class="nav-link">Shooting</a></li>
+            <li><a href="#pagevideo" class="nav-link">Vidéo</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <img
+          alt="menu burger"
+          width="45"
+          height="45"
+          src="https://img.icons8.com/ios-filled/50/menu--v1.png"
+          alt="menu--v1"
+          class="menu"
+        />
+        <span
+          class="namemenu"
+          style="margin-left: 8px; font-size: 18px; color: black"
+          >Menu</span
+        >
+        <!-- <img
+          alt="menu burger"
+          src="img/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+          class="menu"
+        /> -->
+      </section>
+    </header>
+    <main>
+      <section class="Home">
+        <div class="left"><img src="img/image_prensetation.jpg" /></div>
+        <div class="right">
+          <div class="about">
+            <h2>Qui suis-je?</h2>
+            <br />
+            <p>
+              La diva mannequin<br />
+              Je suis une femme captivante, alliant une grande sensibilité
+              émotionnelle à une force intérieure inébranlable. <br />Ma
+              personnalité joviale et mon rire communicatif illuminent mon
+              entourage, tandis que ma passion pour le kompa reflète mon lien
+              profond avec la musique et mes racines.<br />
+              Je me distingue par mes goûts atypiques, mêlant haute couture et
+              excentricité dans mes choix artistiques, culinaires et
+              vestimentaires. <br />Malgré ma vulnérabilité, je fais preuve
+              d’une détermination sans faille, utilisant mon charisme et mon
+              unicité pour inspirer les autres à embrasser leur singularité.
+              <br />Je suis une femme forte, audacieuse et pleine de vie.
+            </p>
+          </div>
+          <div class="mensuration">
+            <h2>Mensuration</h2>
+            <br />
+            <ul>
+              <li>Taille : 1,72 m</li>
+              <li>Poitrine : 70 cm</li>
+              <li>Hanche : 80 cm</li>
+              <li>Yeux : Marron</li>
+              <li>Cheveux : Noirs</li>
+              <li>Pointure : 41</li>
+              <li>Dress size : XS</li>
+            </ul>
+          </div>
+
+          <div class="socials_réseaux">
+            <ul class="social-icons">
+              <li>
+                <a
+                  class="facebook"
+                  aria-label="Facebook"
+                  href="https://www.facebook.com/onelie.onewin.7?mibextid=wwXIfr"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="tiktok"
+                  aria-label="TikTok"
+                  href="https://www.tiktok.com/@pernelle3?_t=8sNKIfOFAUn&_r=1"
+                  target="_blank"
+                >
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="instagram"
+                  aria-label="Instagram"
+                  href="https://www.instagram.com/i.am.pernelle/profilecard/?igsh=bzVlejB3aWFveWF3"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="pagephoto"></section>
+      <section id="pagevideo"></section>
+      <section id="pageshooting">
+        <div class="grid-wrapper"></div>
+      </section>
+      <section id="contact">
+        <form class="form">
+          <div class="title">Prise de contact</div>
+          <input type="text" placeholder="email" class="input" />
+          <textarea placeholder="message"></textarea>
+
+          <button>Envoyez</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="line"></div>
+      <p>&copy; 2025 Create by Sarah_ZIZA</p>
+    </footer>
+    <button id="backToTop" title="Go to top">
+      <img
+        width="30"
+        height="30"
+        src="https://img.icons8.com/ios/50/collapse-arrow--v1.png"
+        alt="collapse-arrow--v1"
+      />
+    </button>
+    <div id="imageModal" style="display: none">
+      <img id="modalImage" src="" alt="Image" />
+    </div>
+  </body>
+  <script>
+    const menuBurger = document.querySelector(".menu"); // Menu burger icon
+    const nav = document.querySelector(".nav"); // Navigation menu
+    const closeBtn = document.querySelector(".close"); // Close button
+    const navLinks = document.querySelectorAll(".nav-link"); // Navigation links
+
+    // Ouvrir ou fermer le menu avec le menu burger
+    menuBurger.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      // menuBurger.classList.add("hidden");
+    });
+
+    // Fermer le menu avec la croix
+    closeBtn.addEventListener("click", () => {
+      nav.classList.remove("active");
+      // menuBurger.classList.add("hidden");
+    });
+
+    // Fermer le menu quand un lien est cliqué
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("active");
+        // menuBurger.classList.add("hidden");
+      });
+    });
+  </script>
+
+  <script src="script.js" defer></script>
+</html>

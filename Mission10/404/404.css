@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+}
+
+/* 404 section start */
+.page_404 {
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  min-height: 60vh;
+}
+.wrapper {
+  background-image: url(https://i.pinimg.com/originals/0e/c0/db/0ec0dbf1e9a008acb9955d3246970e15.gif);
+  background-repeat: no-repeat;
+  height: 500px;
+  background-position: center;
+}
+.msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.msg h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.msg p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* back button */
+.backbtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.backbtn .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: #fff;
+  background: rgba(154, 198, 226, 0.612);
+  box-shadow: 0px 5px 10px rgba(17, 17, 20, 0.6);
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backbtn .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.backbtn .btn:hover {
+  background: #26252a;
+}
+
+/* 404 section end */

@@ -1,0 +1,301 @@
+:root {
+  --primary-color: #1196fa;
+  --secondary-color: #0d7ac2;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --gray-color: #707070;
+  --error-color: #e74c3c;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-image: radial-gradient(
+    circle at 10% 20%,
+    rgba(17, 150, 250, 0.8) 0%,
+    rgba(13, 122, 194, 0.9) 90%
+  );
+}
+
+section.Connexion,
+section.Inscription {
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form {
+  background-color: rgba(154, 198, 226, 0.612);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  transition: var(--transition);
+}
+
+.form:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form h1 {
+  color: var(--dark-color);
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.form h1 span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.form h2 {
+  color: var(--dark-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form .logo {
+  height: 120px;
+  width: auto;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.1));
+  transition: var(--transition);
+}
+
+.form .logo:hover {
+  transform: scale(1.05);
+}
+
+.input-span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="text"] {
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  border: 2px solid #e0e0e0;
+  background-color: rgba(255, 255, 255, 0.9);
+  outline: none;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus,
+.form input[type="text"]:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(17, 150, 250, 0.2);
+}
+
+.form .submit {
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form .submit:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.span {
+  text-align: center;
+  color: var(--gray-color);
+  font-size: 0.9rem;
+}
+
+.span a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.span a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.8rem;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+/* Password strength indicator */
+#password-strength {
+  height: 6px;
+  border-radius: 3px;
+  margin-top: 8px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+#password-strength .progress {
+  height: 100%;
+  width: 0;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+#password-strength .strength-0 {
+  width: 0%;
+  background-color: transparent;
+}
+#password-strength .strength-1 {
+  width: 25%;
+  background-color: var(--error-color);
+}
+#password-strength .strength-2 {
+  width: 50%;
+  background-color: var(--warning-color);
+}
+#password-strength .strength-3 {
+  width: 75%;
+  background-color: #f1c40f;
+}
+#password-strength .strength-4 {
+  width: 100%;
+  background-color: var(--success-color);
+}
+
+/* Captcha styling */
+.captcha-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.captcha-container img {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form {
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .form h1 {
+    font-size: 1.6rem;
+  }
+
+  .form h2 {
+    font-size: 1.3rem;
+  }
+
+  .form .logo {
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+    background-image: none;
+    background-color: var(--primary-color);
+  }
+
+  .form {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .form h1 {
+    font-size: 1.4rem;
+  }
+
+  .form h2 {
+    font-size: 1.2rem;
+  }
+
+  .form input[type="email"],
+  .form input[type="password"],
+  .form input[type="text"] {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .form .submit {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .span {
+    font-size: 0.8rem;
+  }
+}
+
+/* Animation for form inputs */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.input-error {
+  animation: shake 0.4s ease;
+  border-color: var(--error-color) !important;
+}

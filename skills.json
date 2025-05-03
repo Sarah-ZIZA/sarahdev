@@ -1,0 +1,63 @@
+[{
+    "name": "Compétences_T",
+    "icon": "https://img.icons8.com/fluency/48/whiteboard.png",
+    "link": "Tableau_E5_ZIZA_KANGUE_Sarah.pdf",
+    "linkText": "Voir"
+  },
+  {
+    "name": "Développement web",
+    "icon": "https://img.icons8.com/nolan/64/backend-development.png",
+    "details": ["HTML", "CSS", "PHP", "JavaScript", "Bootstrap"]
+  },
+  {
+    "name": "Programation",
+    "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-programmer-mobile-app-development-flaticons-lineal-color-flat-icons-4.png",
+    "details": ["Python", "JAVA", "Algorithme"]
+  },
+  {
+    "name": "BDD",
+    "icon": "https://img.icons8.com/carbon-copy/64/search-database.png",
+    "details": ["My SQL", "MERISE", "SGBDR"]
+  },
+
+  {
+    "name": "Outils de versionnig",
+    "icon": "https://img.icons8.com/ios-filled/64/separate-document.png",
+    "details": ["GITHUB", "GIT"]
+  },
+  {
+    "name": "Gestion de projets",
+    "icon": "https://img.icons8.com/nolan/64/project.png",
+    "details": ["GANTT", "PERT", "MPM", "marge variable", "point mort"]
+  },
+  {
+    "name": "Travail d'équipe",
+    "icon": "https://img.icons8.com/ios/50/student-activity.png",
+    "details": ["Pendant mon BTS SIO, j'ai pu développer ma capacité à travailler en équipe lors des ateliers professionnels, ainsi que lors de mes stages en entreprise."]
+  },
+  {
+    "name": "Réseau",
+    "icon": "https://img.icons8.com/laces/64/network.png",
+    "details": [
+      "Sauvegarde sur NAS",
+      "Création serveurs FTP(Linux, Windows)",
+      "Wireshark",
+      "Samba"
+    ]
+  },
+   {
+    "name": "Cybersécurité",
+    "icon": "assets/images/skills/rgpd1.png",
+    "details": ["Certification RGPD et ANSSI", "Notions de cybertsécurité"],
+    "link": "Attestations.pdf",
+    "linkText": "Voir"
+  },
+  {
+    "name": "Bureautique et Veille Informatique",
+    "icon": "https://img.icons8.com/stickers/50/project-management.png",
+    "details": [
+      "Maîtrise des outils bureautiques",
+      "Suivi des évolutions technologique"
+    ]
+  }
+]
