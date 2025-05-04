@@ -10,6 +10,9 @@
   {
     "element": "img/vidéo2.mp4",
     "type": "video"
+  }, {
+    "element": "img/vidéo3.mp4",
+    "type": "video"
   },
   {
     "element": "img/image2.jpg",
@@ -97,5 +100,17 @@
   {
     "element": "img/image21.jpg",
     "type": "shooting"
-  }
+  },  {
+    "element": "img/image24.jpg",
+    "type": "shooting",
+    "layout": "tall"
+  },
+   {
+    "element": "img/image25.jpg",
+    "type": "shooting"
+  },{
+    "element": "img/image26.jpg",
+    "type": "shooting",
+    "layout": "tall"
+  },
 ]
