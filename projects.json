@@ -141,6 +141,16 @@
       "code": ""
     }
   },
+    {
+    "name": "Création d'un site vitrine:Thème au choix ",
+    "desc": "Prise en mains des language web; connection à une base de donnée et traveaux pratique",
+    "image": "fisher",
+    "category": "TPB2",
+    "links": {
+      "view": "https://youtu.be/QNyNqcdtRVQ",
+      "code": ""
+    }
+  },
   {
     "name": "Java création d'une calculatrice",
     "desc": "Prise en mains de java et traveaux pratique",
