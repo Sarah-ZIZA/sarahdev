@@ -10,7 +10,16 @@
     }
   }, 
 
-
+ {
+    "name": "LPSF-clinique",
+    "desc": "Ce site présente la Clinique LPFS, un établissement fictif créé dans le cadre de notre immersion professionnelle.Développé en collaboration avec Jessy Richard",
+    "image": "Ap2",
+    "category": "AP",
+    "links": {
+      "view": "https://youtu.be/60NnCGK7XTs",
+      "code": ""
+    }
+  },
  
   {
     "name": "La Diva",
@@ -169,6 +178,15 @@
     "category": "TPB2",
     "links": {
       "view": "../Mastermind/index.html",
+      "code": ""
+    }
+  },  {
+    "name": "Symfony-Création d'un site E-commerce",
+    "desc": "Prise en mains de Symfony et traveaux pratique",
+    "image": "symfony",
+    "category": "TPB2",
+    "links": {
+      "view": "https://youtu.be/te4HH-xnl3g",
       "code": ""
     }
   },
