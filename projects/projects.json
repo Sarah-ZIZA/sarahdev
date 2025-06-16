@@ -8,8 +8,18 @@
       "view": "https://youtu.be/68iLVfyCFeI",
       "code": ""
     }
+  }, 
+
+ {
+    "name": "LPSF-clinique",
+    "desc": "Ce site présente la Clinique LPFS, un établissement fictif créé dans le cadre de notre immersion professionnelle.Développé en collaboration avec Jessy Richard",
+    "image": "Ap2",
+    "category": "AP",
+    "links": {
+      "view": "https://youtu.be/60NnCGK7XTs",
+      "code": ""
+    }
   },
-  
  
   {
     "name": "La Diva",
@@ -131,6 +141,16 @@
       "code": ""
     }
   },
+    {
+    "name": "Création d'un site vitrine:Thème au choix ",
+    "desc": "Prise en mains des language web; connection à une base de donnée et traveaux pratique",
+    "image": "fisher",
+    "category": "TPB2",
+    "links": {
+      "view": "https://youtu.be/QNyNqcdtRVQ",
+      "code": ""
+    }
+  },
   {
     "name": "Java création d'une calculatrice",
     "desc": "Prise en mains de java et traveaux pratique",
@@ -168,6 +188,15 @@
     "category": "TPB2",
     "links": {
       "view": "../Mastermind/index.html",
+      "code": ""
+    }
+  },  {
+    "name": "Symfony-Création d'un site E-commerce",
+    "desc": "Prise en mains de Symfony et traveaux pratique",
+    "image": "symfony",
+    "category": "TPB2",
+    "links": {
+      "view": "https://youtu.be/te4HH-xnl3g",
       "code": ""
     }
   },
@@ -243,12 +272,12 @@
     }
   },
   {
-    "name": "Style Ghibli de ChatGPT",
-    "desc": "Face au style Ghibli de ChatGPT, les fans de Miyazaki pleurent",
-    "image": "mon_contact-Photo",
+    "name": "5G",
+    "desc": "les derniers chiffres du déploiement en France",
+    "image": "veille5g",
     "category": "Veille",
     "links": {
-      "view": "https://www.clubic.com/actualite-559503-face-au-style-ghibli-de-chatgpt-les-fans-de-miyazaki-pleurent.html",
+      "view": "https://feedly.com/i/entry/m90pVrbY+BOPqoerY6vRp/aqk6q6Pc5/WCB8FtElwP0=_1957aad6222:a3f428:d4d0980a",
       "code": ""
     }
   }
