@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
 
       // Récupérer les données du formulaire
-      const serviceID = "service_fo5az9r"; //  votre identifiant de service EmailJS
+      const serviceID = "service_ajftt8c"; //  votre identifiant de service EmailJS
       const templateID = "template_wgy6x8s"; // votre identifiant de modèle EmailJS
 
       emailjs.sendForm(serviceID, templateID, this).then(
