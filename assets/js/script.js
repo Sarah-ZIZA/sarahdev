@@ -61,7 +61,7 @@ var typedName = new Typed(".typing-name", {
 });
 
 var typedText = new Typed(".typing-text", {
-  strings: ["Diplomée", "D'un BTS SIO"],
+  strings: ["diplomée d'un BTS SIO", "en licence 3 Informatique"],
   typeSpeed: 100,
   backSpeed: 50,
   loop: true,
